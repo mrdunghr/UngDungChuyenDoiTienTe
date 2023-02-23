@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <script src="ChangeMoney.js"></script>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Amout</th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+  </tr>
+  <tr>
+    <td><input type="Text" id="Amount"></td>
+    <td>
+      <select id="Form">
+        <option value="USD">USD</option>
+        <option value="VND">Việt Nam</option>
+      </select>
+    </td>
+    <td>
+      <select id="To">
+        <option value="VND">Việt Nam</option>
+        <option value="USD">USD</option>
+      </select>
+    </td>
+    <td><button style="background-color: blueviolet; color: white" onclick="convertMoney();">Convert</button></td>
+  </tr>
+</table>
+<br>
+<p id="Return" style="color: blue"></p>
+</body>
+</html>
